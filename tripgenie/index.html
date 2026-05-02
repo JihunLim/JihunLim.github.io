@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트립지니 - AI 여행 일정 플래너</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8f9fa; color: #333; }
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 20px; text-align: center; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 16px; }
+        .hero p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto 32px; }
+        .badge { display: inline-block; }
+        .badge img { height: 50px; }
+        .container { max-width: 800px; margin: 0 auto; padding: 60px 20px; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; margin: 40px 0; }
+        .feature { background: white; border-radius: 16px; padding: 32px 24px; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+        .feature .icon { font-size: 2.5rem; margin-bottom: 16px; }
+        .feature h3 { font-size: 1.1rem; margin-bottom: 8px; }
+        .feature p { font-size: 0.9rem; color: #666; line-height: 1.5; }
+        h2 { font-size: 1.8rem; text-align: center; margin-bottom: 12px; }
+        .subtitle { text-align: center; color: #666; margin-bottom: 40px; }
+        .section { margin-bottom: 60px; }
+        .how-it-works ol { list-style: none; counter-reset: step; }
+        .how-it-works li { counter-increment: step; background: white; border-radius: 12px; padding: 20px 24px 20px 64px; margin-bottom: 16px; position: relative; box-shadow: 0 1px 6px rgba(0,0,0,0.06); }
+        .how-it-works li::before { content: counter(step); position: absolute; left: 20px; top: 50%; transform: translateY(-50%); width: 32px; height: 32px; background: #667eea; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+        footer { background: #333; color: #aaa; padding: 40px 20px; text-align: center; font-size: 0.85rem; }
+        footer a { color: #aaa; }
+        footer p { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>트립지니</h1>
+        <p>AI가 여행지, 날짜, 취향을 분석해 최적의 일정을 자동으로 만들어 드려요. 맛집, 관광지, 이동 동선까지 한 번에!</p>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>주요 기능</h2>
+            <p class="subtitle">AI가 만드는 완벽한 여행 일정</p>
+            <div class="features">
+                <div class="feature">
+                    <div class="icon">🤖</div>
+                    <h3>AI 맞춤 일정</h3>
+                    <p>여행지, 일정, 인원, 스타일을 선택하면 AI가 최적의 코스를 자동 생성합니다.</p>
+                </div>
+                <div class="feature">
+                    <div class="icon">🗺️</div>
+                    <h3>스마트 동선</h3>
+                    <p>AI가 이동 거리와 시간을 고려한 효율적인 루트를 설계합니다.</p>
+                </div>
+                <div class="feature">
+                    <div class="icon">🌏</div>
+                    <h3>150개국 이상</h3>
+                    <p>전 세계 인기 여행지의 주요 도시를 원탭으로 선택할 수 있습니다.</p>
+                </div>
+                <div class="feature">
+                    <div class="icon">📅</div>
+                    <h3>편리한 관리</h3>
+                    <p>생성된 일정을 저장하고 캘린더로 내보내거나 공유할 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section how-it-works">
+            <h2>이용 방법</h2>
+            <p class="subtitle">간단한 4단계로 완벽한 여행 일정을 만드세요</p>
+            <ol>
+                <li>Google 또는 Apple 계정으로 로그인합니다</li>
+                <li>여행지, 날짜, 인원, 여행 스타일을 선택합니다</li>
+                <li>광고를 시청하고 AI 일정을 생성합니다</li>
+                <li>생성된 일정을 확인하고 저장합니다</li>
+            </ol>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 트립지니 (TripGenius)</p>
+        <p><a href="./support/">고객 지원</a> · <a href="https://huning.dev/privacy">개인정보처리방침</a> · <a href="https://huning.dev/terms">이용약관</a></p>
+        <p>문의: support@tripgeni.app</p>
+    </footer>
+</body>
+</html>
